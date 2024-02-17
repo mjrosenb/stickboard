@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android">
+    <subtype android:imeSubtypeMode="keyboard" />
+</input-method>
+<!--
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.example.greetingcard.MainActivity"
+    android:isDefault="true"
+    android:supportsSwitchingToNextInputMethod="true">
+    <subtype
+        android:label="English (US)"
+        android:subtypeId="0xc9194f98"
+        android:imeSubtypeLocale="en_US"
+        android:languageTag="en-US"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="TrySuppressingImeSwitcher,AsciiCapable,SupportTouchPositionCorrection,EmojiCapable"
+        android:isAsciiCapable="true"
+        />
+    <subtype
+        android:label="English (UK)"
+        android:subtypeId="0xb045e755"
+        android:imeSubtypeLocale="en_GB"
+        android:languageTag="en-GB"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="TrySuppressingImeSwitcher,AsciiCapable,SupportTouchPositionCorrection,EmojiCapable"
+        android:isAsciiCapable="true"
+        />
+
+    <subtype
+        android:label="Generic"
+        android:subtypeId="0x8d58fc2d"
+        android:imeSubtypeLocale="en_IN"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="KeyboardLayoutSet=qwerty,AsciiCapable,EmojiCapable"
+        android:isAsciiCapable="true"
+        />
+
+    <!- Emoji subtype has to be an addtional subtype added at boot time because ICS doesn't
+         support Emoji. ->
+    <!-
+    <subtype android:icon="@drawable/ic_ime_switcher_dark"
+            android:label="@string/subtype_emoji"
+            android:subtypeId="0xc14d88b2"
+            android:imeSubtypeLocale="zz"
+            android:imeSubtypeMode="keyboard"
+            android:imeSubtypeExtraValue="KeyboardLayoutSet=emoji,EmojiCapable"
+            android:isAsciiCapable="false"
+    />
+->
+</input-method>
+-->
