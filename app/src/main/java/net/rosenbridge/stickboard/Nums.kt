@@ -1,7 +1,6 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import android.graphics.Canvas
-import android.graphics.Path
 
 class Nums : StickAction {
     override fun doAction(parent: Stickboard) {

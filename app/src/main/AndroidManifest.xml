@@ -10,11 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Greetingcard"
+        android:theme="@style/Theme.Stickboard"
         tools:targetApi="31">
         <!-- Services -->
-        <service android:name=".Kbd"
-            android:label="MyKeyboard"
+        <service android:name="net.rosenbridge.stickboard.Kbd"
+            android:label="StickBoard"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:exported="true"
             android:visibleToInstantApps="true">
@@ -25,7 +25,7 @@
                 android:resource="@xml/method"/>
         </service>
         <!-- Activities -->
-        <activity android:name="com.example.greetingcard.MainActivity"
+        <activity android:name="com.example.stickboard.MainActivity"
             android:launchMode="singleTask"
             android:noHistory="true"
             android:exported="true">

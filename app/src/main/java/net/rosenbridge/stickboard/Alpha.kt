@@ -1,11 +1,12 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import android.graphics.Canvas
 
-class Done : StickAction {
+class Alpha : StickAction {
     override fun doAction(parent: Stickboard) {
-parent.getCallback().onDone()
+        parent.setCurrentState(StickboardState.LOWER)
     }
+
 
     override fun drawLabel(
         parent: Stickboard,
@@ -14,7 +15,7 @@ parent.getCallback().onDone()
         offY: Float,
         isMain: Boolean
     ) {
-        val paint = if (isMain)  parent.pPaint else parent.nPaint
-        drawText("Done", offX, offY, canvas, paint)
+        drawText("ABC", offX, offY, canvas, parent.nPaint)
     }
+
 }

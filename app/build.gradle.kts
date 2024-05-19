@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.greetingcard"
+    namespace = "com.example.stickboard"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.greetingcard"
+        applicationId = "com.example.stickboard"
         minSdk = 29
         targetSdk = 34
         versionCode = 1

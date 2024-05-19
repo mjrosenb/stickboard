@@ -1,4 +1,4 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import android.graphics.Canvas
 import android.graphics.Paint
@@ -7,7 +7,9 @@ import android.graphics.Rect
 interface StickAction {
     fun doAction(parent: Stickboard)
     fun drawLabel(parent: Stickboard, canvas: Canvas, offX: Float, offY: Float, isMain: Boolean)
-
+    fun toUpper() : StickAction {
+        return this;
+    }
     fun drawText(str: String, offX: Float, offY: Float, canvas: Canvas, paint: Paint) {
         var bounds: Rect = Rect(0,0,0,0)
         paint.getTextBounds(str, 0, str.length, bounds)

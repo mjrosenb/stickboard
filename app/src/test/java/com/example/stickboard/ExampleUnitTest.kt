@@ -1,4 +1,4 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import android.content.Context
 import android.graphics.Canvas

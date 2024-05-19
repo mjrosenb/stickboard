@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "greetingcard"
+rootProject.name = "stickboard"
 include(":app")
  

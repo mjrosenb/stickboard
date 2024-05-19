@@ -1,4 +1,4 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 enum class StickPos(val x:Int, val y: Int) {
     TL(-1,-1),

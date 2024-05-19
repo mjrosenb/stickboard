@@ -1,4 +1,4 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 enum class StickboardState {
     LOWER,

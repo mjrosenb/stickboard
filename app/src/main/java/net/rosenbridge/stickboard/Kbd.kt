@@ -1,7 +1,6 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
-import com.example.greetingcard.R
-import android.R.id.keyboardView
+import com.example.stickboard.R
 import android.inputmethodservice.InputMethodService
 import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView
@@ -67,13 +66,33 @@ class Kbd : InputMethodService(), OnKeyboardActionListener, Stickboard.OnStickEv
         }
         super.setInputView(view)
     }
-
+    // random debug helpers
     override fun onPress(primaryCode: Int) {
         Log.e(TAG, "key pressed: $primaryCode")
     }
 
     override fun onRelease(primaryCode: Int) {
         Log.e(TAG, "key released: $primaryCode")
+    }
+
+    override fun onText(text: CharSequence?) {
+        Log.e(TAG, "onText <<$text>>")
+    }
+
+    override fun swipeLeft() {
+        Log.e(TAG, "swipe left")
+    }
+
+    override fun swipeRight() {
+        Log.e(TAG, "Swipe right")
+    }
+
+    override fun swipeDown() {
+        Log.e(TAG, "swipeDown")
+    }
+
+    override fun swipeUp() {
+        Log.e(TAG, "swipeUp")
     }
 
     override fun onKey(primaryCode: Int, keyCodes: IntArray?) {
@@ -103,26 +122,6 @@ class Kbd : InputMethodService(), OnKeyboardActionListener, Stickboard.OnStickEv
                 inputConnection.commitText(code.toString(), 1)
             }
         }
-    }
-
-    override fun onText(text: CharSequence?) {
-        Log.e(TAG, "onText <<$text>>")
-    }
-
-    override fun swipeLeft() {
-        Log.e(TAG, "swipe left")
-    }
-
-    override fun swipeRight() {
-        Log.e(TAG, "Swipe right")
-    }
-
-    override fun swipeDown() {
-        Log.e(TAG, "swipeDown")
-    }
-
-    override fun swipeUp() {
-        Log.e(TAG, "swipeUp")
     }
 
     override fun onChar(code: Char) {

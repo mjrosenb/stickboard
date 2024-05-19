@@ -1,4 +1,4 @@
-package com.example.greetingcard
+package com.example.stickboard
 
 import android.os.Bundle
 import android.util.Log
@@ -11,14 +11,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.greetingcard.ui.theme.GreetingcardTheme
+import net.rosenbridge.stickboard.ui.theme.StickboardTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.i("KBD", "calling MainActivity@onCreate")
         setContent {
-            GreetingcardTheme {
+            StickboardTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     Greeting("Android")
@@ -39,7 +39,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    GreetingcardTheme {
+    StickboardTheme {
         Greeting("Android")
     }
 }

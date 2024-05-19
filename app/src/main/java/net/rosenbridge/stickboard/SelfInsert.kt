@@ -1,9 +1,12 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import android.graphics.Canvas
 
 class SelfInsert(private val char : Char) : StickAction {
     private val chars = char.toString()
+    override fun toUpper(): StickAction {
+        return SelfInsert(char.uppercaseChar())
+    }
     override fun doAction(parent: Stickboard) {
         parent.getCallback().onChar(char)
         when (char) {

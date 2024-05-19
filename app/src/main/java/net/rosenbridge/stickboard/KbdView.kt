@@ -1,11 +1,9 @@
-package com.example.greetingcard
+package net.rosenbridge.stickboard
 
 import android.content.Context
 import android.content.res.Resources
 import android.graphics.BlendMode
 import android.graphics.Canvas
-import android.graphics.Paint
-import android.graphics.PorterDuff
 import android.util.AttributeSet
 import android.util.Log
 import android.view.MotionEvent
@@ -49,7 +47,7 @@ class KbdView(ctx: Context, attrs : AttributeSet) : View(ctx, attrs, Resources.g
         Log.i("Kbd", "width=$width, height=$height")
 
         super.onDraw(canvas)
-        canvas.drawColor(0, BlendMode.CLEAR)
+        canvas.drawColor(0, BlendMode.COLOR)
 //        canvas.drawColor(0xff800000, BlendMode.SRC_OVER)
 //        canvas.drawColor(0xff400000, BlendMode.SRC)
 //
